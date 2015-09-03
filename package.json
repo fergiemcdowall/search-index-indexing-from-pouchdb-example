@@ -1,0 +1,35 @@
+{
+  "name": "search-index-indexing-from-pouchdb-example",
+  "version": "0.0.1",
+  "description": "Demo that shows how to feed some documents into a pouchdb instance, and then index the entire database into a search-index",
+  "main": "main.js",
+  "dependencies": {
+    "brfs": "*",
+    "browserify": "11.0.1",
+    "level-js": "2.2.1",
+    "pouchdb": "^4.0.1",
+    "search-index": "0.6.8"
+  },
+  "devDependencies": {
+    "mocha": "*"
+  },
+  "scripts": {
+    "build-js": "browserify main.js -o bundle.js",
+    "postinstall": "npm run build-js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fergiemcdowall/search-index-indexing-from-pouchdb-example.git"
+  },
+  "keywords": [
+    "search-index",
+    "pouchdb",
+    "search"
+  ],
+  "author": "Fergus McDowall",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fergiemcdowall/search-index-indexing-from-pouchdb-example/issues"
+  },
+  "homepage": "https://github.com/fergiemcdowall/search-index-indexing-from-pouchdb-example#readme"
+}
